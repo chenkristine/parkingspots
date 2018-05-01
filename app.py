@@ -94,7 +94,7 @@ data = r.json()
 
 endpoint = "/api/v1/parkingspots/available"
 postdata = {"lat": 35,
-			"lon": 120,
-			"radius": 1}
+	    "lon": 120,
+	    "radius": 1}
 headers = {'content-type': 'application/json'}
 response = requests.post(url = endpoint, data=json.dumps(postdata), headers=headers)"""
