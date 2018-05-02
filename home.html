@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Parking Spots</h1>
+<p>Check available spots:</p>
+<form action="/api/v1/parkingspots/available/<string:id_num>" method="POST">
+  Latitude:<br>
+  <input type="text" name="lat" value="">
+  <br>
+  Longitude:<br>
+  <input type="text" name="lon" value="">
+  <br>
+  Radius: <br>
+  <input type="text" name="radius" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Reserve a parking spot:</p>
+<form action="/api/v1/parkingspots/reserve/<string:id_num>" method="GET">
+  Parking Spot ID:<br>
+  <input type="text" name="id_num" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
